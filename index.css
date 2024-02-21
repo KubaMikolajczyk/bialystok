@@ -5,7 +5,10 @@ body {
     padding:0;
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
+    font-weight: 300;
   }
+
+/* HERO SECTION */
 
 #hero{
     width: 100%;
@@ -71,12 +74,8 @@ body {
     width:100%;
     max-width: 1088px;
     position: relative;
-    /* Setting height to height of img to allow absolute positioning of img */
+    /* Setting height to height of img as it adds a gap below img */
     height:275px;
-}
-
-#hero-character{
-    /* position: absolute; */
 }
 
 #character-msg{
@@ -106,3 +105,81 @@ body {
         top: -72px;
     }
 }  
+
+/* OVERVIEW SECTION */
+
+#overview{
+    position: relative;
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 24px;
+    gap: 120px;
+}
+
+.overview-content{
+    width:100%;
+    max-width: 1088px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .overview-content{
+        flex-direction: column-reverse;
+    }
+
+    .overview-content:nth-child(even){
+        flex-direction: column;
+    }
+}
+
+.overivew-container{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .overivew-container{
+        width:100%
+    }
+}
+
+#overview-map{
+    border-radius: 1.5rem;
+    aspect-ratio: 4 / 3;
+}
+
+.overivew-container .overview-img{
+    width:100%;
+    border-radius: 1rem;;
+}
+
+.overview-msg{
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.msg-grey{
+    background-color: #F4F4F4;
+}
+
+.msg-orange{
+    background-color: #FCF3ED;
+}
+
+.overview-msg img{
+    width: 44px;
+    border-radius: 0.5rem;
+}
+
+.overview-msg p{
+    margin: 0;
+}
+

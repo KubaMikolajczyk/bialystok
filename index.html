@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <section id="hero">
         <video autoplay muted loop plays-inline id="hero-video">
             <source src="./assets/videos/bialystok_intro_vid.mp4" type="video/mp4">
@@ -26,9 +27,93 @@
                 <div id="character-msg">
                     <p>Hi! 🖐️ My name is Kuba and I will take you around the Town today!</p>
                 </div>
-                <img id="hero-character" src="./assets/images/hero_character_img.webp" alt="An illustration of a male character in black and white style with arms on his sides welcoming viewers to the website">
+                <picture>
+                    <source srcset="./assets/images/hero_character_img.webp" type="image/webp">
+                    <source srcset="./assets/images/hero_character_img.png" type="image/png">
+                    <img id="hero-character" src="./assets/images/hero_character_img.png" alt="An illustration of a male character in black and white style with arms on his sides welcoming viewers to the website">
+                </picture>
             </div>
         </div>
     </section>
+
+    <section id="overview">
+
+        <!-- Row with map -->
+        <div class="overview-content">
+            <div class="overivew-container">
+                <iframe id="overview-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d831405.479670203!2d22.410530037518427!3d52.678107583960475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc048f41971d%3A0x72317dcc8bf07b2c!2sBia%C5%82ystok!5e0!3m2!1sen!2spl!4v1708555976480!5m2!1sen!2spl" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="overivew-container">
+                <div class="overview-msg msg-grey">
+                    <picture>
+                        <source srcset="./assets/images/avatar-grey.webp" type="image/webp">
+                        <source srcset="./assets/images/avatar-grey.png" type="image/png">
+                        <img src="./assets/images/avatar-grey.png" alt="Grey illustration avatar of a man explaining">
+                    </picture>
+                    <p>Białystok is located in the northeastern part of Poland, close to the border with Belarus.</p>
+                </div>
+                <div class="overview-msg msg-orange">
+                    <picture>
+                        <source srcset="./assets/images/avatar-orange-1.webp" type="image/webp">
+                        <source srcset="./assets/images/avatar-orange-1.png" type="image/png">
+                        <img src="./assets/images/avatar-orange-1.png" alt="Orange illustration of a man in a hat with stars in background.">
+                    </picture>
+                    <p>It is the tenth-largest city in Poland, second in terms of population density, and thirteenth in area 🏆</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row with river img -->
+        <div class="overview-content">
+            <div class="overivew-container">
+                <div class="overview-msg msg-grey">
+                    <picture>
+                        <source srcset="./assets/images/avatar-grey.webp" type="image/webp">
+                        <source srcset="./assets/images/avatar-grey.png" type="image/png">
+                        <img src="./assets/images/avatar-grey.png" alt="Grey illustration avatar of a man explaining">
+                    </picture>
+                    <p>Name of the city comes from the name of a small river that flows through the town as “Białystok” in old-polish mean “clean river”</p>
+                </div>
+            </div>
+            <div class="overivew-container">
+                <picture>
+                    <source srcset="./assets/images/bialystok-river.webp" type="image/webp">
+                    <source srcset="./assets/images/bialystok-river.png" type="image/png">
+                    <img class="overview-img" src="./assets/images/bialystok-river.png" alt="View on Białystok river flowing through the forest. On top of the image there are jokingly added texts like, so clean, or beautifull.">
+                </picture>
+            </div>
+        </div>
+
+        <!-- Row with areal view -->
+        <div class="overview-content">
+            <div class="overivew-container">
+                <picture>
+                    <source srcset="./assets/images/bialystok-areal-view.webp" type="image/webp">
+                    <source srcset="./assets/images/bialystok-areal-view.png" type="image/png">
+                    <img class="overview-img" src="./assets/images/bialystok-areal-view.png" alt="View on Białystok from above. We can see a lot of green trees, famous palace and the main square.">
+                </picture>
+            </div>
+            <div class="overivew-container">
+                <div class="overview-msg msg-grey">
+                    <picture>
+                        <source srcset="./assets/images/avatar-grey.webp" type="image/webp">
+                        <source srcset="./assets/images/avatar-grey.png" type="image/png">
+                        <img src="./assets/images/avatar-grey.png" alt="Grey illustration avatar of a man explaining">
+                    </picture>
+                    <p>More than 32 % of the city area is covered by parks and forests!</p>
+                </div>
+                <div class="overview-msg msg-orange">
+                    <picture>
+                        <source srcset="./assets/images/avatar-orange-2.webp" type="image/webp">
+                        <source srcset="./assets/images/avatar-orange-2.png" type="image/png">
+                        <img src="./assets/images/avatar-orange-2.png" alt="Orange illustration of a man with heart shaped eyes">
+                    </picture>
+                    <p>There are so many parks here! Its the greenest city that I’ve been to in Poland.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 </html>
