@@ -190,3 +190,73 @@ body {
     margin: 0;
 }
 
+/* PLACES SECTION */
+
+#places{
+    position: relative;
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px 120px;
+    gap: 24px;
+}
+
+#places .overview-msg{
+    width: calc(100% - 24px);
+}
+
+#places .overview-msg p{
+    display: flex;
+    align-items: center;
+}
+
+.places-grid{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
+
+@media only screen and (max-width: 890px){
+    .places-grid{
+        flex-direction: column;
+    }
+}
+
+.places-item{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+/* To stretch the link on top of the card div  */
+.card-link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.places-item img{
+    width:100%;
+    height: 472px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 520px){
+    .places-item img{
+        aspect-ratio: 1 / 1;
+        height: auto
+    }
+}
+
+.places-item p{
+    margin:0;
+    font-size: 1.25rem;
+    color: #974D1A;
+    text-decoration: underline;
+}
