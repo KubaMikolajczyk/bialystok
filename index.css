@@ -118,6 +118,13 @@ body {
     gap: 120px;
 }
 
+@media only screen and (max-width: 850px) {
+    #overview{
+        gap: 96px;
+        padding: 96px 24px;
+    }
+}
+
 .overview-content{
     width:100%;
     max-width: 1088px;
